@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+/* Mobile device design */
+
+/* Main container where all the contents of the page are located( along with Navbar and footer) */
+.container{
+    min-height: 100vh;
+    background-color: hsl(240, 75%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.width{
+    max-width: 90%;
+    width: 100%;
+}
+.navbar{
+    font-family: Raleway;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* navbar's logo */
+.left .logo{
+    width: 166px;
+    height: 49px;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nabvar .right{
+    width: 50%;
+}
+.navbar .right a{
+    font-size: 0.8rem;
+    margin-left: 20px;
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+}
+/*Styling for top content box */
+.hero_1{
+    margin-top: 150px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/*styling for each section of hero_1 */
+/* image content (right) */
+.hero_1 .section1{
+    aspect-ratio: 4/3;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/illustration-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* text content (left) */
+.hero_1 .content2{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text_section{
+    text-align: center;
+    color: hsl(243, 87%, 12%);
+}
+.hero_1 .section2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.hero_1 .section3{
+    font-size: 1.2rem;
+}
+/*login/ sign up content */
+.hero_1 .section4{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero_1 .section4 .measurement{
+    margin-left: 5px;
+    height: 60px;
+    width: 395px;
+    border-radius: 5px;
+}
+.hero_1 .section4 input{
+    padding-left: 20px;
+    border: 1px solid hsl(243, 87%, 12%);
+}
+.hero_1 .section4 input::placeholder {
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 75%);
+}
+.hero_1 .section4 button{
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(240, 75%, 98%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+/*Styling for middle content box */
+.hero_2{
+    margin-top: 100px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/*styling for each section of hero_2 */
+/* image content (right) */
+.hero_2 .section1{
+    aspect-ratio: 4/3;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/illustration-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* text content(left) */
+/* header section */
+.hero_2 .section2{
+    display: flex;
+    justify-content: center;
+    color: hsl(243, 87%, 12%);
+}
+/* main content */
+.hero_2 .section3 {
+    display: flex;
+    flex-direction: column;
+}
+.hero_2 .section3 p{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 75%);
+}
+/* arrow section */
+.hero_2 .section4{
+    display: flex;
+    justify-content: center;
+}
+.hero_2 .section4 div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+.hero_2 .section4 a{
+    font-size: 1.1rem;
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+/* statement by CEO */
+.hero_2 .section5{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_2 .section5 .don{
+    padding: 20px;
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: hsl(243, 87%, 12%);
+}
+.hero_2 .section5 div .Founder{
+    height: 60px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero_2 .section5 div .Founder .foto{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/avatar-testimonial.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero_3{
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+    background-color: hsl(238, 22%, 44%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Styling for bottom content box */
+.hero_3 .content{
+    height: 300px;
+    width: 80%;
+}
+/* text content */
+.hero_3 .content .section1{
+    display: flex;
+    justify-content: center;
+    color: hsl(240, 75%, 98%);
+}
+.hero_3 .content .section2{
+    text-align: center;
+    font-size: 1.1rem;
+    color: hsl(240, 75%, 98%);
+}
+/*login/sign up content */
+.hero_3 .content .section3{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero_3 .section3 input{
+    padding-left: 20px;
+}
+.hero_3 .section3 input::placeholder {
+    color: hsl(0, 0%, 75%);
+}
+.hero_3 .section3 button{
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(240, 75%, 98%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.hero_3 .section3 .measurement1{
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+}
+/* styling for footer content */
+.Footer{
+    padding-left: 50px;
+    max-width: 100%;
+    width: 100%;
+    height: 650px;
+    background-color: hsl(243, 87%, 12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* Logo section */
+.Footer .section1{
+    height: 150px;
+    max-width: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Footer .section1 .logo{
+    width: 166px;
+    height: 49px;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/footer_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+}
+.horizontal_flex{
+    display: flex;
+    color: hsl(0, 0%, 75%);
+}
+.phone_icon{
+    margin-right: 30px;
+    height: 18px;
+    width: 18px;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/icon-phone.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.email_icon{
+    margin-right: 25px;
+    height: 16px;
+    width: 20px;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/icon-email.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Infos about us */
+.Footer .section2 {
+    max-width: 100%;
+    width: 100px;
+    height: 150px;
+}
+.Footer .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Footer .links a{
+    text-decoration: none;
+    color: hsl(0, 0%, 75%);
+}
+.Footer .section3 {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+}
+/* Social media's icons */
+.Footer .section4 {
+    max-width: 100%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer .section4 .social_medias{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.Footer .section4 .social_medias a{
+    text-decoration: none;
+    color: hsl(0, 0%, 75%);
+}
+.Footer .section4 .social_medias a .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 50%;
+}
+/* Desktop design */
+@media (min-width:780px){
+    .navbar .left .logo{
+        width: 332px;
+        height: 98px;
+    }
+    .navbar .right{
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+    }
+    .navbar .right a{
+        font-size: 3rem;
+    }
+    .hero_1{
+        height: 600px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero_1 .section1{
+        height: 90%;
+        width: 30%;
+    }
+    .hero_1 .content2{
+        height: 500px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hero_1 .content2 .text_section{
+        text-align: start;
+        font-size: 5rem;
+    }
+    .hero_1 .content2 .section3{
+        font-size: 2.3rem;
+    }
+    .hero_1 .content2 .section4{
+        height: 80px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    .hero_1 .content2 .section4 input{
+        height: 100%;
+        width: 50%;
+    }
+    .hero_1 .content2 .section4 input::placeholder{
+        padding-top: 10px;
+        font-size: 1.8rem;
+    }
+    .hero_1 .content2 .section4 button{
+        height: 100%;
+        width: 40%;
+        font-size: 2rem;
+    }
+    .hero_2{
+        height: 1000px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero_2 .section1{
+        height: 73%;
+        width: 41%;
+    }
+    .hero_2 .content{
+        height: 90%;
+        width: 57%;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+    }
+    .hero_2 .content .section2{
+        font-size: 3rem;
+        width: 73%;
+    }
+    .hero_2 .content .section3 p{
+        font-size: 2.5rem;
+    }
+    .hero_2 .content .section4{
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .hero_2 .content .section4 div{
+        width: 100%;
+    }
+    .hero_2 .content .section4 a{
+        font-size: 2rem;
+    }
+    .hero_2 .content .section5{
+        justify-content: flex-start;
+    }
+    .hero_2 .content .section5 .don{
+        padding: 10px 20px 10px 20px;
+        font-size: 1.5rem;
+        width: 600px;
+        height: 300px;
+    }
+    .hero_2 .content .section5 .Founder{
+        display: flex;
+        justify-content: flex-start;
+        width: 400px;
+        height: 200px;
+    }.hero_2 .content .section5 .Founder .foto{
+        margin-right: 15px;
+        height: 80px;
+        width: 80px;
+    }
+    .hero_3 .content{
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero_3 .content .text{
+        width: 40%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .hero_3 .content .text .section1{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 3rem;
+    }
+    .hero_3 .content .text .section2{
+        font-size: 1.7rem;
+        text-align: start;
+    }
+
+    .hero_3 .content .section3{
+        height: 80%;
+        width: 40%;
+    }
+    .hero_3 .content .section3 input{
+        width: 90%;
+        height: 80px;
+    }
+    .hero_3 .content .section3 input::placeholder{
+        font-size: 1.5rem;
+    }
+    .hero_3 .content .section3 button{
+        width: 90%;
+        height: 80px;
+        font-size: 2rem;
+    }
+    .Footer{
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .Footer .section1{
+        position: relative;
+        bottom: 50px;
+        width: 20%;
+        height: 250px;
+    }
+    .Footer .section1 .logo{
+        width: 332px;
+        height: 98px;
+    }
+    .phone_icon{
+        width: 32px;
+        height: 32px;
+    }
+    .email_icon{
+        width: 32px;
+        height: 24px;
+    }
+    .Footer .section1 .contacts p{
+        font-size: 1.5rem;
+    }
+    .Footer .section2{
+        width: 20%;
+        height: 250px;
+        font-size: 2rem;
+    }
+    .Footer .section3{
+        width: 20%;
+        height: 250px;
+        font-size: 2rem;
+    }
+    .Footer .section4{
+        width: 20%;
+        height: 250px;
+    }
+    .container button {
+        cursor: pointer;
+        transition: all .5s linear;
+    }
+    .container button:hover {
+        background-color: rgba(48, 101, 248, .5);
+    }
+}
